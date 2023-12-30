@@ -1,14 +1,16 @@
+import "./App.css"
 import React from "react";
 import ReactDOM from "react-dom/client";
+import Carousel from "./components/Carousel.jsx";''
 
-console.log(React);
-console.log(ReactDOM);
+import { slides } from "../data/carouselData.json";
 
 const App = () => {
     return (
-        <>
+        <div className="App">
             <h2>This is an Image Carousel Application!</h2>
-        </>
+            <Carousel data={slides}/>
+        </div>
     );
 };
 
